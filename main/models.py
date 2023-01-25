@@ -8,6 +8,7 @@ class Lessons(models.Model):
     descriptionArm = models.TextField(blank=True)
     descriptionRus = models.TextField(blank=True)
     descriptionEng = models.TextField(blank=True)
+    image = models.ImageField(upload_to='lessonsImages', blank=True)
 
     def __str__(self):
         return self.titleArm
