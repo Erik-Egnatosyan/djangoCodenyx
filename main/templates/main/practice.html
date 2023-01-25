@@ -1,0 +1,290 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru">
+  <head>
+    {% block import %}
+      <meta name="keywords" content="">
+      <meta name="description" content="Codenyx - это сайт для обучения по созданию сайтов с интересным способам обучения. На сайте присутствует справочник по всем современным тегам с примерами.">
+      <meta name="author" content="Erik Egnatosyan">
+      <title>Практика</title>
+      <link rel="stylesheet" href="{% static 'CSS/Home.css' %}" media="screen">
+      <link rel="stylesheet" href="{% static 'CSS/special.css' %}" media="screen">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    {% endblock %}
+  </head>
+  {% block content %}
+
+    <script type="module" src="https://unpkg.com/dark-mode-toggle@0.14.2/dist/dark-mode-toggle.min.mjs"></script>
+  <section class="u-clearfix u-image u-section-1" id="sec-d92a" data-image-width="1980" data-image-height="700">
+    <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+      <img class="u-image u-image-default u-image-1" src="{% static 'IMAGES/eroi varik.svg' %}" alt="" data-image-width="766" data-image-height="595">
+      <div id="typed-strings">
+        <span class="Russian">
+          <h1 class="u-align-left u-custom-font u-text u-text-1 rus-shrift" > Настоящий программист тот - <span id="typed1"></span><br></h1>
+        </span>
+        <span class="Armenian">
+          <h1 class="u-align-left u-custom-font u-text u-text-1 arm-shrift" > Իսկական ծրագրավորողը նա է - <span id="typed2"></span><br></h1>
+        </span>
+    </div>
+      <script>
+        new Typed('#typed1',{
+    strings : ['кто вечно прогрессирует!',
+                'кто любит учиться!',
+                'кто не сдаётся быстро!'],
+    typeSpeed : 60,
+    delaySpeed : 60,
+    startDelay: 800,
+    backDelay: 800,
+    backSpeed: 30,
+    loop : true
+  });
+      </script>
+      <script>
+        new Typed('#typed2',{
+    strings : ['ով միշտ առաջադիմում է!',
+                'ով սիրում է սովորել!',
+                'ով արագ չի հանձնվում!'],
+    typeSpeed : 60,
+    delaySpeed : 60,
+    startDelay: 800,
+    backDelay: 800,
+    backSpeed: 30,
+    loop : true
+  });
+      </script>
+    </div>
+  </section>
+  <section class="u-clearfix u-section-2" id="carousel_06bb">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-expanded-width-sm u-expanded-width-xs u-gradient u-radius-50 u-shape u-shape-round u-shape-1"></div>
+      <div class="u-align-left u-container-style u-group u-group-1">
+        <div class="u-container-layout u-valign-middle u-container-layout-1">
+          <span class="Russian">
+            <h2 class="u-custom-font u-text u-text-1  ">Путь Создания Вашей Первой Веб Страницы</h2>
+            <p class="u-text u-text-2"> Чтобы научиться создавать сайты, нужно понимать как они работают и за что отвечает каждая деталь. Тут простым и интерактивным способом будет объяснено, как создавать страницы, подключать их и открыть на live сервере.</p>
+          </span>
+          <span class="Armenian">
+            <h2 class="u-custom-font u-text u-text-1 arm-shrift">Ձեր առաջին վեբ էջը ստեղծելու ճանապարհը</h2>
+            <p class="u-text u-text-2 arm-min-shrift"> Որպեսզի սովորեք, թե ինչպես ստեղծել կայքեր, դուք պետք է հասկանաք, թե ինչպես են դրանք աշխատում և ինչի համար է պատասխանատու յուրաքանչյուր մանրուք: Այստեղ պարզ և ինտերակտիվ եղանակով կբացատրվի, թե ինչպես կարելի է ստեղծել էջեր, միացնել դրանք և բացել դրանք live սերվերի վրա։</p>
+          </span>
+        </div>
+      </div>
+      <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-col">
+            <div class="u-size-20">
+              <div class="u-layout-row">
+                <div class="u-container-style u-image u-image-round u-layout-cell u-left-cell u-radius-50 u-size-20 u-size-20-md u-image-1" data-image-width="1380" data-image-height="920" >
+                  <div class="u-container-layout u-valign-middle">
+                    <div class="u-align-center u-container-style u-group u-opacity u-opacity-60 u-palette-1-base u-radius-10 u-shape-round u-group-2"> 
+                      <a href="install-vscode.html" class="to-practice"><div class="u-container-layout u-container-layout-3">
+                        <span class="Russian">
+                          <h3 class="u-text u-text-default u-text-3 hoverobject">Установка и настройка программы</h3>
+                        </span>
+                        <span class="Armenian">
+                          <h3 class="u-text u-text-default u-text-3 hoverobject">Ծրագրի տեղադրում և կարգավորում</h3>
+                        </span>
+                      </div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-image u-image-round u-layout-cell u-radius-50 u-size-20 u-size-20-md u-image-2" data-image-width="932" data-image-height="1080">
+                  <div class="u-container-layout u-valign-middle">
+                    <div class="u-align-center-lg u-align-center-xl u-container-style u-group u-opacity u-opacity-60 u-palette-1-base u-radius-10 u-shape-round u-group-3">
+                      <a href="first-page.html" class="to-practice"><div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
+                        <span class="Russian">
+                          <h3 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-default-lg u-text-default-xl u-text-4">Основные теги HTML и CSS</h3>
+                        </span>
+                        <span class="Armenian">
+                          <h3 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-default-lg u-text-default-xl u-text-4">Հիմնական HTML և CSS թեգեր</h3>
+                        </span>
+                      </div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-image u-image-round u-layout-cell u-radius-50 u-right-cell u-size-20 u-size-20-md u-image-3" data-image-width="1380" data-image-height="920">
+                  <div class="u-container-layout u-valign-middle">
+                    <div class="u-align-center-lg u-align-center-xl u-container-style u-group u-opacity u-opacity-60 u-palette-1-base u-radius-10 u-shape-round u-group-4">
+                      <a href="third-page.html" class="to-practice"><div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-7">
+                        <span class="Russian">
+                          <h3 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-default-lg u-text-default-xl u-text-5">Добавление кнопок, ссылок и таблиц </h3>
+                        </span>
+                        <span class="Armenian">
+                          <h3 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-default-lg u-text-default-xl u-text-5">Կոճակների, հղումների և աղյուսակների ավելացում </h3>
+                        </span>
+                      </div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-20">
+              <div class="u-layout-row">
+                <div class="u-container-style u-image u-image-round u-layout-cell u-left-cell u-radius-50 u-size-20 u-size-20-md u-image-4" data-image-width="1380" data-image-height="920" >
+                  <div class="u-container-layout u-valign-middle">
+                    <div class="u-align-center u-container-style u-group u-opacity u-opacity-60 u-palette-1-base u-radius-10 u-shape-round u-group-5">
+                      <a href="fourth-page.html" class="to-practice"><div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-9">
+                        <span class="Russian">
+                          <h3 class="u-text u-text-default u-text-6">Добавление фото, видео и аудио</h3>
+                        </span>
+                        <span class="Armenian">
+                          <h3 class="u-text u-text-default u-text-6">Նկարների, տեսանյութերի և աուդիոների ավելացում</h3>
+                        </span>
+                      </div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-image u-image-round u-layout-cell u-radius-50 u-size-20 u-size-20-md u-image-5" data-image-width="932" data-image-height="1080">
+                  <div class="u-container-layout u-valign-middle">
+                    <div class="u-align-center-lg u-align-center-xl u-container-style u-group u-opacity u-opacity-60 u-palette-1-base u-radius-10 u-shape-round u-group-3">
+                      <a href="fifth-page.html" class="to-practice"><div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
+                        <span class="Russian">
+                          <h3 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-default-lg u-text-default-xl u-text-4">Структура web страницы</h3>
+                        </span>
+                        <span class="Armenian">
+                          <h3 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-default-lg u-text-default-xl u-text-4">Վեբ էջի կառուցվածքը</h3>
+                        </span>
+                      </div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-image u-image-round u-layout-cell u-radius-50 u-right-cell u-size-20 u-size-20-md u-image-7" data-image-width="1380" data-image-height="920">
+                  <div class="u-container-layout u-valign-middle">
+                    <div class="u-align-center-lg u-align-center-xl u-container-style u-group u-opacity u-opacity-60 u-palette-1-base u-radius-10 u-shape-round u-group-4">
+                      <a href="sixth-page.html" class="to-practice"><div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-7">
+                        <span class="Russian">
+                          <h3 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-default-lg u-text-default-xl u-text-5">Позиционирование - Основы grid и flex</h3>
+                        </span>
+                        <span class="Armenian">
+                          <h3 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-default-lg u-text-default-xl u-text-5">Դիրքորոշում - Flex և grid հիմունքներ</h3>
+                        </span>
+                      </div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-40">
+              <div class="u-layout-row">
+                <div class="u-size-20">
+                  <div class="u-layout-col">
+                    <div class="u-container-style u-image u-image-round u-layout-cell u-left-cell u-radius-50 u-size-30 u-image-8" data-image-width="951" data-image-height="1080">
+                      <div class="u-container-layout u-valign-middle">
+                        <div class="u-align-center u-container-style u-group u-opacity u-opacity-60 u-palette-1-base u-radius-10 u-shape-round u-group-5">
+                          <a href="seventh-page.html" class="to-practice"><div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-9">
+                            <span class="Russian">
+                              <h3 class="u-text u-text-default u-text-6">Адаптация сайта под мобильные устройства </h3>
+                            </span>
+                            <span class="Armenian">
+                              <h3 class="u-text u-text-default u-text-6">Կայքի հարմարեցում բջջային սարքերի համար </h3>
+                            </span>
+                          </div></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-container-style u-image u-image-round u-layout-cell u-left-cell u-radius-50 u-size-30 u-image-9" data-image-width="1620" data-image-height="1080">
+                      <div class="u-container-layout u-valign-middle">
+                        <div class="u-align-center u-container-style u-group u-opacity u-opacity-60 u-palette-1-base u-radius-10 u-shape-round u-group-6">
+                          <a href="eighth-page.html" class="to-practice"><div class="u-container-layout u-valign-middle-xl u-container-layout-11">
+                            <span class="Russian">
+                              <h3 class="u-text u-text-default u-text-7">Оптимизация сайта</h3>
+                            </span>
+                            <span class="Armenian">
+                              <h3 class="u-text u-text-default u-text-7">Կայքի օպտիմիզացում</h3>
+                            </span>
+                          </div></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-size-40">
+                  <div class="u-layout-row">
+                    <div class="u-container-style u-image u-image-round u-layout-cell u-radius-50 u-right-cell u-size-60 u-image-6" data-image-width="932" data-image-height="1080">
+                      <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-12">
+                        <div class="u-container-style u-group u-opacity u-opacity-65 u-palette-1-base u-radius-50 u-shape-round u-group-7">
+                          <a href="final-page.html" class="to-practice"><div class="u-container-layout u-container-layout-13">
+                            <span class="Russian">
+                              <h3 class="u-align-center u-subtitle u-text u-text-8 "> Создание макета сайта</h3>
+                            </span>
+                            <span class="Armenian">
+                              <h3 class="u-align-center u-subtitle u-text u-text-8 "> Կայքի մակետի ստեղծում</h3>
+                            </span>
+                          </div></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-3" id="carousel_197b">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-clearfix u-gutter-20 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-col">
+            <div class="u-size-30">
+              <div class="u-layout-row">
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-1" style="border-radius: 50px;">
+                    <span class="Russian">
+                      <h3 class="u-custom-font u-font-montserrat u-text u-text-1">Также попробуйте самим собрать макет сайта</h3>
+                      <p class="u-text u-text-grey-40 u-text-2">У каждого макета своя сложность создания. Попробуйте самим собрать макет чтобы они были схожи.</p>
+                    </span>
+                    <span class="Armenian">
+                      <h3 class="u-custom-font u-font-montserrat u-text u-text-1">Փորձեք նաև ինքներդ հավաքել մակետ</h3>
+                      <p class="u-text u-text-grey-40 u-text-2">Յուրաքանչյուր մակետ ունի ստեղծման իր բարդությունը: Փորձեք ինքներդ հավաքել մակետը այնպես, որ դրանք նման լինեն:</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="u-container-style u-image u-layout-cell u-size-30 u-image-1" style="border-radius: 50px;">
+                  <div class="u-container-layout u-container-layout-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-row">
+                <div class="u-container-style u-image u-layout-cell u-size-30 u-image-2" style="border-radius: 50px;">
+                  <div class="u-container-layout u-container-layout-3"></div>
+                </div>
+                <div class="u-container-style u-image u-layout-cell u-size-30 u-image-3" style="border-radius: 50px;">
+                  <div class="u-container-layout u-container-layout-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% endblock %}
+
+  {% block script %}
+  <script>
+    (function(d,t) {
+      var BASE_URL="https://app.chatwoot.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'ohof5JHmARjg63zw9V3SmNax',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+  {% endblock %}
+</html>

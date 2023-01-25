@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'IMAGES/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'IMAGES/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'IMAGES/android-chrome-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'IMAGES/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'IMAGES/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'IMAGES/safari-pinned-tab.svg' %}" color="#79b2ff">
+    <meta name="apple-mobile-web-app-title" content="Codenyx">
+    <meta name="application-name" content="Codenyx">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="{% static 'IMAGES/mstile-144x144.png' %}">
+    <meta name="msapplication-config" content="{% static 'IMAGES/browserconfig.xml' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Codenyx, html обучение, css html обучение, сайты html обучение, html обучение с нуля, html обучение с нуля бесплатно, html обучение онлайн, html обучение онлайн бесплатно, html обучение с нуля бесплатно онлайн, html обучение ереван, обучение html и css с нуля​">
+    <meta name="description" content="Codenyx - это сайт для обучения по созданию сайтов с интересным способам обучения. На сайте присутствует справочник по всем современным тегам с примерами.">
+    <meta name="author" content="Erik Egnatosyan">
+    <title>Codenyx</title>
+    <meta name="theme-color" content="#040021"/>
+    <meta property="og:title" content="Codenyx">
+    <meta property="og:description" content="Codenyx - это сайт для обучения по созданию сайтов с интересным способам обучения. На сайте присутствует справочник по всем современным тегам с примерами.">
+        <meta property="og:type" content="website">
+    <link href="{% static 'CSS/Russian.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'CSS/Armenian.css' %}" rel="arm stylesheet" type="text/css" title="alternate">
+    <style>.container{width:100%;height:100%}.container svg{height:100%;width:100%;overflow:visible}#bongo-cat{fill:white;stroke-linecap:round;stroke-linejoin:round;stroke-width:4}.typing-animation{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-duration:1.2s;animation-duration:1.2s}path#f1-l1{-webkit-animation-name:typing-f1-l1;animation-name:typing-f1-l1}path#f1-l2{-webkit-animation-name:typing-f1-l2;animation-name:typing-f1-l2}path#f1-l3{-webkit-animation-name:typing-f1-l3;animation-name:typing-f1-l3}path#f2-l4{-webkit-animation-name:typing-f2-l4;animation-name:typing-f2-l4}path#f2-l5{-webkit-animation-name:typing-f2-l5;animation-name:typing-f2-l5}path#f2-l6{-webkit-animation-name:typing-f2-l6;animation-name:typing-f2-l6}path#f3-l7{-webkit-animation-name:typing-f3-l7;animation-name:typing-f3-l7}path#f3-l8{-webkit-animation-name:typing-f3-l8;animation-name:typing-f3-l8}path#f3-l9{-webkit-animation-name:typing-f3-l9;animation-name:typing-f3-l9}@-webkit-keyframes typing-f3-l9{0%,82%{d:path("M8,25L8,25")}100%,92%{d:path("M8,25L96,25")}}@keyframes typing-f3-l9{0%,82%{d:path("M8,25L8,25")}100%,92%{d:path("M8,25L96,25")}}@-webkit-keyframes typing-f3-l8{0%,68%{d:path("M8,13L8,13")}100%,82%{d:path("M8,13L146,13")}}@keyframes typing-f3-l8{0%,68%{d:path("M8,13L8,13")}100%,82%{d:path("M8,13L146,13")}}@-webkit-keyframes typing-f3-l7{0%,60%{d:path("M0,1L0,1")}100%,68%{d:path("M0,1L96,1")}}@keyframes typing-f3-l7{0%,60%{d:path("M0,1L0,1")}100%,68%{d:path("M0,1L96,1")}}@-webkit-keyframes typing-f2-l6{0%,54%{d:path("M8,25L8,25")}100%,60%{d:path("M8,25L69,25")}}@keyframes typing-f2-l6{0%,54%{d:path("M8,25L8,25")}100%,60%{d:path("M8,25L69,25")}}@-webkit-keyframes typing-f2-l5{0%,44%{d:path("M8,13L8,13")}100%,54%{d:path("M8,13L114,13")}}@keyframes typing-f2-l5{0%,44%{d:path("M8,13L8,13")}100%,54%{d:path("M8,13L114,13")}}@-webkit-keyframes typing-f2-l4{0%,30%{d:path("M0,1L0,1")}100%,44%{d:path("M0,1L136,1")}}@keyframes typing-f2-l4{0%,30%{d:path("M0,1L0,1")}100%,44%{d:path("M0,1L136,1")}}@-webkit-keyframes typing-f1-l3{0%,24%{d:path("M8,25L8,25")}100%,30%{d:path("M8,25L61,25")}}@keyframes typing-f1-l3{0%,24%{d:path("M8,25L8,25")}100%,30%{d:path("M8,25L61,25")}}@-webkit-keyframes typing-f1-l2{0%,14%{d:path("M8,13L8,13")}100%,24%{d:path("M8,13L124,13")}}@keyframes typing-f1-l2{0%,14%{d:path("M8,13L8,13")}100%,24%{d:path("M8,13L124,13")}}@-webkit-keyframes typing-f1-l1{0%{d:path("M0,1L0,1")}100%,14%{d:path("M0,1L160,1")}}@keyframes typing-f1-l1{0%{d:path("M0,1L0,1")}100%,14%{d:path("M0,1L160,1")}}#paw-left--down,#paw-left--up,#paw-right--down,#paw-right--up{-webkit-animation:.3s infinite blink;animation:.3s infinite blink}#paw-left--down,#paw-right--up{-webkit-animation-delay:150ms;animation-delay:150ms}@-webkit-keyframes blink{0%,49%{opacity:0}50%{opacity:1}}@keyframes blink{0%,49%{opacity:0}50%{opacity:1}}#laptop__code{-webkit-transform:rotateX(-37deg) rotateY(-46deg) rotateZ(-23deg) translateX(8px) translateY(20px) translateZ(-50px);transform:rotateX(-37deg) rotateY(-46deg) rotateZ(-23deg) translateX(8px) translateY(20px) translateZ(-50px)}#bongo-cat .headphone .band,#bongo-cat .laptop-cover,#gubi,#neyebi,.cls-1,.cls-5,.cls-6,.cls-7{fill:none}#bongo-cat .headness,#bongo-cat .paw{stroke:var(--orange)}#bongo-cat .laptop-keyboard{stroke-width:2}#bongo-cat .terminal-code{stroke-width:5}#bongo-cat .laptop-base,#bongo-cat .laptop-cover,#bongo-cat .music .note,#bongo-cat .paw .pads{stroke:var(--pink)}#bongo-cat .headphone .band,#bongo-cat .headphone .speaker path:nth-child(3),#bongo-cat .table line,#third-l{stroke:var(--green)}#bongo-cat .headphone .speaker path:nth-child(2),#bongo-cat .laptop-keyboard,#bongo-cat .terminal-frame,#second-l{stroke:var(--blue)}#bongo-cat .headphone .speaker path:first-child,#bongo-cat .terminal-code,#first-l{stroke:var(--cyan)}.cls-1,.cls-6,.cls-7{stroke:#000;stroke-linecap:round;stroke-linejoin:round}.cls-1{stroke-width:3.92px}.cls-2{opacity:.36}.cls-30{fill:#fff}.cls-3{fill:var(--manul-color)}.cls-4{fill:#38016b}.cls-5{stroke:var(--orange);stroke-miterlimit:10;stroke-width:2.5px}.cls-6{stroke-width:1.96px}.cls-7{stroke-width:4.9px}#glaz{stroke:none}#ptukner{stroke:var(--gray);fill:var(--gray)}.pads{fill:var(--pink)}#head-color{fill:#a8a8a8}#paw-left,#paw-right{fill:#a8a8a8;stroke:var(--orange);stroke-width:3px}:root{--bg:#1a1e2d;--green:#a5ea9b;--pink:#ff8de3;--blue:#569cfa;--orange:#41403d;--cyan:#087e97;--none:none;--gray:gray;--manul-color:#dbdbdb}.band{fill:none;stroke:var(--green);stroke-width:4px}.speaker{stroke-width:4px; fill: white;} .pads{fill:var(--pink);stroke:var(--pink);stroke-width:4px}#smaller{stroke-width:0}#lapt-top{stroke:var(--blue);stroke-width:5px;fill:none}</style>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/preloading.css' %}">
+    <!-- <link rel="stylesheet" href="Codenyx.css"> -->
+    <script rel="preconnect" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script src="{% static 'JS/styleswitch.js' %}" type="text/javascript"></script>
+    <div class="supermask">
+      <img class="superloader" src="{% static 'IMAGES/loading.svg' %}" alt="loader">
+    </div>
+    <script class="u-script" type="text/javascript" src="{% static 'JS/preloading.js' %}"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.codenyx.am/",
+        "logo": "https://i.ibb.co/QPDDBvt/sevivra.png"
+      }
+      </script>
+    {% block import %}
+    {% endblock %}
+</head>
+<body>
+    <header class="u-clearfix u-header" id="sec-5c4a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+    <a href="{% url 'main:Home' %}" data-page-id="160084925" class="u-image u-logo u-image-1" data-image-width="309" data-image-height="44" title="Codenyx">
+      <svg id="logo-animation" width="312" height="43" class="u-logo-image u-logo-image-1"> <path class="code-aqua" stroke="black" stroke-width="2" fill="none" d="M 14.65625 32.925781 C 6.984375 32.925781 0.558594 25.964844 0.558594 17.089844 C 0.558594 8.214844 6.984375 1.257812 14.65625 1.257812 L 29.105469 1.257812 C 32.75 1.257812 36.0625 3.03125 38.453125 5.890625 L 35.960938 8.875 C 34.203125 6.773438 31.785156 5.480469 29.105469 5.480469 L 14.65625 5.480469 C 8.710938 5.480469 4.085938 10.8125 4.085938 17.089844 C 4.085938 23.367188 8.710938 28.703125 14.65625 28.703125 L 35.402344 28.703125 L 35.402344 32.925781 Z M 53.875 28.703125 L 71.5 28.703125 C 75.636719 28.703125 78.992188 25.863281 78.992188 22.367188 C 78.992188 18.871094 75.636719 16.035156 71.5 16.035156 L 53.875 16.035156 C 49.738281 16.035156 46.382812 18.871094 46.382812 22.367188 C 46.382812 25.863281 49.738281 28.703125 53.875 28.703125 Z M 53.875 11.8125 L 71.5 11.8125 C 77.171875 11.8125 82.515625 16.058594 82.515625 22.367188 C 82.515625 28.679688 77.171875 32.925781 71.5 32.925781 L 53.875 32.925781 C 48.203125 32.925781 42.855469 28.679688 42.855469 22.367188 C 42.855469 16.058594 48.203125 11.8125 53.875 11.8125 Z M 97.9375 32.925781 C 91.855469 32.925781 86.921875 28.195312 86.921875 22.367188 C 86.921875 16.539062 91.855469 11.8125 97.9375 11.8125 L 118.207031 11.8125 L 118.207031 16.035156 L 97.9375 16.035156 C 93.800781 16.035156 90.445312 18.871094 90.445312 22.367188 C 90.445312 25.863281 93.800781 28.703125 97.9375 28.703125 L 120.851562 28.703125 L 120.851562 1.257812 L 124.375 1.257812 L 124.375 32.925781 Z M 164.035156 18.324219 C 162.433594 16.808594 160.828125 16.035156 158.648438 16.035156 L 141.121094 16.035156 L 141.121094 17.617188 C 141.121094 19.511719 142.699219 21.050781 144.644531 21.050781 L 164.035156 21.050781 Z M 144.644531 24.742188 C 140.753906 24.742188 137.59375 21.550781 137.59375 17.617188 L 137.59375 16.777344 C 135.234375 17.847656 133.628906 19.949219 133.628906 22.367188 C 133.628906 25.863281 136.984375 28.703125 141.121094 28.703125 L 164.949219 28.703125 L 164.949219 32.925781 L 141.121094 32.925781 C 135.035156 32.925781 130.101562 28.195312 130.101562 22.367188 C 130.101562 16.539062 135.035156 11.8125 141.121094 11.8125 L 158.648438 11.8125 C 162.019531 11.8125 164.75 13.371094 166.976562 15.78125 L 167.558594 16.414062 L 167.558594 24.742188 Z M 144.644531 24.742188"> </path> <path class="nyx-aqua" stroke="orange" stroke-width="2" fill="none" d="M 192.378906 0.078125 L 192.378906 33.820312 L 183.730469 33.820312 L 178.597656 18.484375 L 178.597656 33.820312 L 170.355469 33.820312 L 170.355469 0.078125 L 178.597656 0.078125 L 184.128906 15.269531 L 184.128906 0.078125 Z M 219.753906 0.078125 L 212.5625 21.609375 L 212.5625 33.820312 L 203.421875 33.820312 L 203.421875 21.609375 L 196.488281 0.078125 L 205.546875 0.078125 C 206.964844 6.664062 207.761719 11.097656 207.945312 13.375 C 208.492188 9.777344 209.40625 5.34375 210.691406 0.078125 Z M 243.835938 0.078125 L 240.371094 15 L 245.597656 33.820312 L 236.457031 33.820312 C 235.363281 30.457031 234.363281 26.359375 233.457031 21.523438 C 233.210938 23.664062 232.863281 25.929688 232.417969 28.320312 L 231.492188 33.820312 L 221.882812 33.820312 L 225.46875 15 L 221.882812 0.078125 L 231.417969 0.078125 C 231.59375 1.007812 231.9375 2.554688 232.449219 4.722656 C 232.859375 6.375 233.195312 7.898438 233.457031 9.289062 L 235.566406 0.078125 Z M 243.835938 0.078125"> </path> </svg> <script> anime({ targets: '#logo-animation path', strokeDashoffset: [anime.setDashoffset, 0], easing: 'easeInOutQuad', duration: 5300, direction: 'alternate', loop: true }); </script>
+    </a>
+    <div class="u-clearfix u-custom-html u-custom-html-1">
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" onclick="lockScroll();">
+        <div class="hamburger"><div></div></div>
+        <nav class="menu">
+          <div>
+            <div>
+                            <ul style="padding-left: 0;">
+                <a href="Html-Category.html"><li>HTML</li></a>
+                <a href="Css.html"><li>CSS</li></a>
+                <a href="practice.html"><li>Практика</li></a>
+                <a href="game-side.html"><li>Мини(игры)</li></a>
+                <a href="compiler.html"><li>Компилятор</li></a>
+              </ul>
+              <div class="u-align-center u-container-style u-group u-group-1">
+                <div class="u-container-layout">
+                  <div class="u-align-center u-clearfix u-custom-html u-preserve-proportions u-custom-html-2">
+                    <a style="color: white;" href="javascript:chooseStyle('none', 60)"><button type="button" class="button-language">Russian Language</button></a><br>
+                    <a style="color: white;" href="javascript:chooseStyle('alternate', 60)"><button type="button" class="button-language">Armenian Language</button></a>
+                  </div>
+                  <div class="u-align-center u-clearfix u-custom-html u-preserve-proportions u-custom-html-3">
+                    <dark-mode-toggle id="dark-mode-toggle-2"
+                    appearance="switch"
+                    light="Светлый "
+                    dark="Тёмный"
+                    remember="Запомнить выбор"
+                  ></dark-mode-toggle>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="#" target="_blank" hidden></a>
+        <input type="text" placeholder="What are you looking for?">
+        <div class="autocom-box">
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/></div></header>
+    {% block content %}
+    {% endblock %}
+    <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-grey-80" id="sec-02a6"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="index.html" data-page-id="160084925" class="u-image u-logo u-image-1" data-image-width="309" data-image-height="44" title="Codenyx">
+          <img src="{% static '/IMAGES/sevivra.svg' %}" class="u-logo-image u-logo-image-1" alt="Logo">
+        </a>
+        <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-1">Beta test: Version №1</p>
+        <div class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" title="Facebook" target="_blank" rel="noopener" href="https://www.facebook.com/erik.egnatosyan.17"><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8255"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-8255"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+            c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="instagram" target="_blank" rel="noopener" href="https://www.instagram.com/erikegnatosyan/"><span class="u-icon u-social-icon u-social-instagram u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f82e"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-f82e"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+            z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+            C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+            c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+          </a>
+          <a class="u-social-url" target="_blank" rel="noopener" title="Google Plus" href="https://mail.google.com/mail/sans.egnatosyan@gmail.com"><span class="plus u-icon u-social-google u-social-icon u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6517"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-6517"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M60.8,76.3c-6.6,8.6-19,11.1-29,7.7c-10.6-3.5-18.4-14.2-18.2-25.5C13,44.6,25.3,31.8,39.1,31.6
+	c7.1-0.6,14,2.1,19.3,6.6c-2.2,2.4-4.4,4.8-6.9,7.1c-4.8-2.9-10.4-5-15.9-3.1c-8.8,2.6-14.3,13-10.9,21.8
+	c2.7,9.1,13.7,14.1,22.5,10.2c4.5-1.6,7.5-5.7,8.7-10.2c-5.1-0.1-10.2,0-15.5-0.2c0-3,0-6.1,0-9.2c8.6,0,17.1,0,25.7,0
+	C66.7,62.3,65.5,70.4,60.8,76.3z M98.3,62.5c-2.6,0-5.1,0-7.7,0c0,2.6,0,5.1,0,7.7c-2.6,0-5.1,0-7.7,0c0-2.6,0-5.1,0-7.7
+	c-2.6,0-5.1,0-7.7,0c0-2.6,0-5.1,0-7.7c2.6,0,5.1,0,7.7,0c0-2.6,0-5.1,0.1-7.7c2.6,0,5.1,0,7.7,0c0,2.6,0,5.1,0,7.7
+	c2.6,0,5.1,0,7.7,0C98.3,57.3,98.3,59.9,98.3,62.5z"></path></svg></span>
+          </a>
+          <a class="u-social-url" target="_blank" rel="noopener" title="Telegram" href="https://t.me/HelloProg"><span class="u-icon u-social-icon u-social-telegram u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d034"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-d034"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M18.4,53.2l64.7-24.9c3-1.1,5.6,0.7,4.7,5.3l0,0l-11,51.8c-0.8,3.7-3,4.6-6.1,2.8L53.9,75.8l-8.1,7.8
+	c-0.9,0.9-1.7,1.6-3.4,1.6l1.2-17l31.1-28c1.4-1.2-0.3-1.9-2.1-0.7L34.2,63.7l-16.6-5.2C14,57.4,14,54.9,18.4,53.2L18.4,53.2z"></path></svg></span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+</body>
+<script rel="preconnect" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="{% static 'CSS/dark.css' %}" media="(prefers-color-scheme: dark)">
+<script type="module" src="https://unpkg.com/dark-mode-toggle@0.14.2/dist/dark-mode-toggle.min.mjs"></script>
+<script class="u-script" type="text/javascript" src="{% static 'JS/codenyx.js' %}" defer=""></script>
+{% block script %}
+{% endblock %}
+</html>
