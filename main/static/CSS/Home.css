@@ -24,6 +24,7 @@
   font-family: 'wiguru-13';
 }
 .u-section-1 {
+  background-image: url("images/wave-haikei25.svg");
   background-position: 50% 50%;
 }
 
@@ -160,14 +161,6 @@
   margin: 68px auto 60px 0;
 }
 
-.u-section-2 .u-image-1 {
-  background-image: url("images/setting.png");
-  min-height: 366px;
-  background-position: 50% 50%;
-  border: 15px solid #aa11f936 !important;
-  box-shadow: -5px -5px 20px #ffffff38, 5px 5px 20px #0000003b;
-}
-
 .u-section-2 .u-group-2 {
   width: 290px;
   min-height: 138px;
@@ -181,14 +174,6 @@
 .u-section-2 .u-text-3 {
   font-size: 1.875rem;
   margin: 0 auto;
-}
-
-.u-section-2 .u-image-2 {
-  background-image: url("images/create.png");
-  min-height: 366px;
-  background-position: 50% 50%;
-  border: 15px solid #aa11f936 !important;
-  box-shadow: -5px -5px 20px #ffffff38, 5px 5px 20px #0000003b;
 }
 
 .u-section-2 .u-group-3 {
@@ -206,14 +191,6 @@
   margin: 0 auto;
 }
 
-.u-section-2 .u-image-3 {
-  background-image: url("images/button-image.png");
-  min-height: 366px;
-  background-position: 50% 50%;
-  border: 15px solid #aa11f936 !important;
-  box-shadow: -5px -5px 20px #ffffff38, 5px 5px 20px #0000003b;
-}
-
 .u-section-2 .u-group-4 {
     min-height: 88px;
     width: 292px;
@@ -227,14 +204,6 @@
 .u-section-2 .u-text-5 {
   font-size: 1.875rem;
   margin: 0 auto;
-}
-
-.u-section-2 .u-image-4 {
-  background-image: url("images/photo.png");
-  min-height: 368px;
-  background-position: 50% 50%;
-  border: 15px solid #aa11f936 !important;
-  box-shadow: -5px -5px 20px #ffffff38, 5px 5px 20px #0000003b;
 }
 
 .u-section-2 .u-group-5 {
@@ -252,14 +221,6 @@
   margin: 0 auto;
 }
 
-.u-section-2 .u-image-5 {
-  min-height: 364px;
-  background-image: url("images/learn.png");
-  background-position: 50% 50%;
-  border: 15px solid #aa11f936 !important;
-  box-shadow: -5px -5px 20px #ffffff38, 5px 5px 20px #0000003b;
-}
-
 .u-section-2 .u-group-6 {
   min-height: 66px;
   width: 290px;
@@ -275,38 +236,70 @@
   margin: 0 auto;
 }
 
-.u-section-2 .u-image-6 {
-  min-height: 381px;
-  background-image: url("images/test-exam.png");
-  background-position: 50% 50%;
-  border: 15px solid #aa11f936 !important;
-  box-shadow: -5px -5px 20px #ffffff38, 5px 5px 20px #0000003b;
+/*#GRID_PART*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 3fr));
+    gap: 20px;
+    grid-template-areas: "Div1 Div2 Div3"
+                         "Div4 Div5 Div6"
+                         "Div7 Div9 Div9"
+                         "Div8 Div9 Div9";
 }
 
-.u-section-2 .u-image-7 {
-  min-height: 340px;
-  background-image: url("images/position.png");
-  background-position: 50% 50%;
-  border: 15px solid #aa11f936 !important;
+.Div1 {grid-area: Div1;}
+.Div2 {grid-area: Div2;}
+.Div3 {grid-area: Div3;}
+.Div4 {grid-area: Div4;}
+.Div5 {grid-area: Div5;}
+.Div6 {grid-area: Div6;}
+.Div7 {grid-area: Div7;}
+.Div8 {grid-area: Div8;}
+.Div9 {grid-area: Div9;}
+
+.u-section-2 .u-image {
+  min-height: 350px;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-origin: border-box;
+  border: 15px solid #8611f9e6 !important;
   box-shadow: -5px -5px 20px #ffffff38, 5px 5px 20px #0000003b;
+  border-radius: 50px;
 }
 
-.u-section-2 .u-image-8 {
-  min-height: 243px;
-  background-image: url("images/insert.png");
-  background-position: 50% 50%;
-  border: 15px solid #aa11f936 !important;
+.u-section-2 .u-image-end {
+  min-height: 350px;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-origin: border-box;
+  border: 15px solid #8611f9e6 !important;
   box-shadow: -5px -5px 20px #ffffff38, 5px 5px 20px #0000003b;
+  border-radius: 50px;
 }
 
-.u-section-2 .u-image-9 {
-  min-height: 300px;
-  background-image: url("images/speed.png");
-  background-position: 50% 50%;
-  border: 15px solid #aa11f936 !important;
-  box-shadow: -5px -5px 20px #ffffff38, 5px 5px 20px #0000003b;
+.container div {
+  display: grid;
+  place-content: center;
+  border-radius: 50px;
 }
 
+.practice_block{
+  width: 312px;
+  height: 185px;
+  background-color: #0000ff4d;
+  overflow: none;
+}
+.text_practice_block{
+  padding: 50px;
+  font-size: 2rem;
+  text-align: center;
+  mix-blend-mode: hard-light;
+  color: white;
+}
+
+/* FINISH GRID */
 .u-section-2 .u-container-layout-12 {
   padding: 30px;
 }
