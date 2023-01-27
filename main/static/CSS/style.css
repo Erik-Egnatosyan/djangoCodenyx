@@ -9,12 +9,12 @@ html{
     font-display: swap;
 }
 @font-face {
-    font-family: SHK-Light; 
+    font-family: SHK-Light;
     src: url('../FONT/SHK-Light.otf');
     font-display: swap;
 }
 @font-face {
-    font-family: wiguru-13; 
+    font-family: wiguru-13;
     src: url('../FONT/wiguru-13.ttf');
     font-display: swap;
 }
@@ -4779,6 +4779,41 @@ ul.u-text li:last-child{
     margin-right:0!important;
     margin-bottom:38px
 }
+/*Authorization icon*/
+.authorization-icon, .user-icon
+{
+    float: right;
+    height: auto;
+    width: 32px;
+    margin: 10px 80px;
+}
+
+.authorization-icon img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ACCOUNT */
+.account-main {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    height: auto;
+}
+
+.account-main .account-wrapper {
+    display: grid;
+    width: 100%;
+    min-height: 500px;
+    place-content: center;
+}
+
+.account-main .account-wrapper .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .u-vertical-spacing.u-spacing-37>li:not(:last-child){
     margin-right:0!important;
     margin-bottom:37px
@@ -16329,7 +16364,7 @@ ul:not(.u-unstyled){
         position:absolute;
         z-index:2;
         margin-left:540px;
-        margin-top:-102px
+        margin-top:-92px
     }
     .border-bottom-left-radius1,.border-bottom-right-radius1,.border-top-left-radius1,.border-top-right-radius1{
         width:314px;
@@ -16340,6 +16375,7 @@ ul:not(.u-unstyled){
         top:200px
     }
 }
+
 .u-footer .u-sheet-1{
     min-height:120px
 }
@@ -16468,7 +16504,7 @@ dark-mode-toggle{
     margin-left: 260px;
     margin-top: -71px;
   }
-  
+
   .wrapper .search-input{
     background: #fff;
     border-radius: 5px;
@@ -16477,7 +16513,7 @@ dark-mode-toggle{
     position: absolute;
     z-index: 1;
   }
-  
+
   .search-input input{
     height: 55px;
     width: 100%;
@@ -16488,11 +16524,11 @@ dark-mode-toggle{
     font-size: 18px;
     box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
   }
-  
+
   .search-input.active input{
     border-radius: 5px 5px 0 0;
   }
-  
+
   .search-input .autocom-box{
     padding: 0;
     opacity: 0;
@@ -16500,13 +16536,13 @@ dark-mode-toggle{
     max-height: 280px;
     overflow-y: auto;
   }
-  
+
   .search-input.active .autocom-box{
     padding: 10px 8px;
     opacity: 1;
     pointer-events: auto;
   }
-  
+
   .autocom-box li{
     list-style: none;
     padding: 8px 12px;
@@ -16515,14 +16551,14 @@ dark-mode-toggle{
     cursor: default;
     border-radius: 3px;
   }
-  
+
   .search-input.active .autocom-box li{
     display: block;
   }
   .autocom-box li:hover{
     background: #00d9ff;
   }
-  
+
   .search-input .icon{
     position: absolute;
     right: 0px;
@@ -16542,6 +16578,11 @@ dark-mode-toggle{
         margin-top:-77px;
         margin-bottom:70px
     }
+    .authorization-icon
+    {
+        float: right;
+        margin: -53px 55px;
+    }
 }
 @media (max-width:991px){
     .wrapper{
@@ -16559,6 +16600,11 @@ dark-mode-toggle{
         border-color:#ccd3db;
         stroke:#ccd3db;
         box-shadow:rgba(46,190,207,.4) 0 5px,rgba(46,190,207,.3) 0 10px,rgba(46,190,207,.2) 0 15px,rgba(46,190,207,.1) 0 20px,rgba(46,190,207,.05) 0 25px
+    }
+    .authorization-icon
+    {
+        float: right;
+        margin: -53px 55px;
     }
 }
 @media (max-width:767px){
@@ -16583,10 +16629,20 @@ dark-mode-toggle{
         stroke:#858e99;
         box-shadow:rgba(46,190,207,.4) 0 5px,rgba(46,190,207,.3) 0 10px,rgba(46,190,207,.2) 0 15px,rgba(46,190,207,.1) 0 20px,rgba(46,190,207,.05) 0 25px
     }
+    .authorization-icon
+    {
+        float: right;
+        margin: -79px 38px;
+    }
 }
 @media (max-width:575px){
     .search-input input{
-        width:333px
+        width:247px
+    }
+    .authorization-icon
+    {
+        float: right;
+        margin: -51px 15px;
     }
 }
 .u-section-1 .u-sheet-1{
@@ -17146,3 +17202,13 @@ dark-mode-toggle{
     position: fixed;
     width: 100%;
 }
+
+/* LOGIN */
+.login-div, .register-div {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+/* REGISTER */

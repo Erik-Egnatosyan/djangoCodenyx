@@ -250,3 +250,9 @@ ul:not(.u-unstyled) {
  ol{
     color: white;
  }
+ /* AUTHORIZATION ICON */
+ .authorization-icon img {
+    width: 100%;
+    filter: invert(1);
+    object-fit: cover;
+}
