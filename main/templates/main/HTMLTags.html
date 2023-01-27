@@ -1,0 +1,87 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block import %}
+
+<link rel="stylesheet" href="{% static 'CSS/Html-all.css' %}">
+<link rel="stylesheet" href="{% static 'CSS/special.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="u-clearfix u-lightbox u-white u-section-1" id="sec-d6bf">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <button class="glow-on-hover" type="button">{{tag.tagname }}</button>
+        <span class="Russian">
+          {{tag.descriptionRus | safe}}
+        </span>
+        <span class="Armenian">
+          {{tag.descriptionArm | safe}}
+        </span>
+        <div class="u-border-11 u-border-grey-dark-1 u-line u-line-horizontal u-opacity u-opacity-30 u-line-2"></div>
+        <span class="Russian">
+          <h3 class="u-text u-text-default u-text-3"> Синтаксис</h3>
+        </span>
+        <span class="Armenian">
+          <h3 class="u-text u-text-default u-text-3"> Գրելաձև</h3>
+        </span>
+        <script type="text/plain" class="language-html line-numbers">{{tag.syntax | safe}}</script>
+        <div class="u-border-11 u-border-grey-dark-1 u-line u-line-horizontal u-opacity u-opacity-30 u-line-3"></div>
+        <span class="Russian">
+          <h3 class="u-text u-text-default u-text-5">Пример</h3>
+        </span>
+        <span class="Armenian">
+          <h3 class="u-text u-text-default u-text-5">Օրինակ</h3>
+        </span>
+        <div class="u-clearfix u-custom-html u-custom-html-1">
+          {{tag.example | safe}}
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          <script async="async" src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+        <span class="Russian">
+          <p class="u-align-center-xs u-text u-text-default u-text-6">⇓Результат данного примера показан на рисунке⇓</p>
+        </span>
+        <span class="Armenian">
+          <p class="u-align-center-xs u-text u-text-default u-text-6">⇓Այս օրինակի արդյունքը ցույց է տրված նկարում⇓</p>
+        </span>
+        <a data-fslightbox="gallery" href="images/h1-h6.png"><img class="u-image u-image-contain u-image-default u-image-1" src="images/h1-h6.png" alt="wbr image" width="1140px" height="650px"></a>
+      </div>
+      <div class="example">
+        <table class="table-browser-support">
+          <caption class="table-caption"><span class="Russian">Поддержка браузера для</span><span class="Armenian">Բրաուզերի աջակցությունը</span> <span class="u-text-palette-1-base">{{tag}}</span> </span><span class="Russian"> элемента</span><span class="Armenian"> տարրին</span></caption>
+          <thead class="table-head">
+            <tr class="table-row">
+              <th class="table-header table-left">Browser</th>
+              <th class="table-header table-center" data-browser="IE">IE</th>
+              <th class="table-header table-center" data-browser="Edge">Edge</th>
+              <th class="table-header table-center" data-browser="Chrome">Chrome</th>
+              <th class="table-header table-center" data-browser="Firefox">Firefox</th>
+              <th class="table-header table-center" data-browser="Safari">Safari</th>
+              <th class="table-header table-center" data-browser="Opera">Opera</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr class="table-row">
+              <th class="table-left table-header">Version</th>
+              <td class="table-cell" data-support="yes" data-browser="IE">11</td>
+              <td class="table-cell" data-support="yes" data-browser="Edge">12+</td>
+              <td class="table-cell" data-support="yes" data-browser="Chrome">97+</td>
+              <td class="table-cell" data-support="yes" data-browser="Firefox">2+</td>
+              <td class="table-cell" data-support="yes" data-browser="Safari">15.2+</td>
+              <td class="table-cell" data-support="yes" data-browser="Opera">82</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+{% endblock %}
+
+{% block script %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-okaidia.min.css">
+<script src='//cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-highlight/prism-line-highlight.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/unescaped-markup/prism-unescaped-markup.min.js'></script>
+{% endblock %}

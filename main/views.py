@@ -28,6 +28,13 @@ class Practice(ListView):
         return Lessons.objects.all()
 
 
+def showHtmlTag(request, tag_id):
+    tag = HTMLTags.objects.get(pk=tag_id)
+    print(tag.descriptionArm)
+    return render(request, 'main/HTMLTags.html', {'tag': tag})
+
+
+# ALL RELATED TO LOGIN AND REGISTER
 class RegisterUser(CreateView):
     form_class = RegisterUserForm
     template_name = 'main/register.html'

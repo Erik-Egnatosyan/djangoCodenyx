@@ -12,3 +12,21 @@ class Lessons(models.Model):
 
     def __str__(self):
         return self.titleArm
+
+
+class HTMLTags(models.Model):
+    tagname = models.CharField(max_length=50, default='', blank=False)
+    descriptionArm = models.TextField(blank=True)
+    descriptionRus = models.TextField(blank=True)
+    descriptionEng = models.TextField(blank=True)
+    syntax = models.TextField(default='', blank=True)
+    example = models.TextField(default='', blank=True)
+    typeArm = models.CharField(max_length=70, blank=False, default='')
+    typeRus = models.CharField(max_length=70, blank=False, default='')
+
+    def __str__(self):
+        return self.tagname
+
+
+class HTMLTagsAttrs(models.Model):
+    attrname = models.CharField(max_length=50, default='', blank=False)
