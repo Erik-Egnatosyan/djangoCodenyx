@@ -28,9 +28,20 @@ class Practice(ListView):
         return Lessons.objects.all()
 
 
+class HTMLTagsPage(ListView):
+    model = HTMLTags
+    template_name = 'main/Html-Category.html'
+    context_object_name = 'tags'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
+    def get_queryset(self):
+        return HTMLTags.objects.all()
+
+
 def showHtmlTag(request, tag_id):
     tag = HTMLTags.objects.get(pk=tag_id)
-    print(tag.descriptionArm)
     return render(request, 'main/HTMLTags.html', {'tag': tag})
 
 

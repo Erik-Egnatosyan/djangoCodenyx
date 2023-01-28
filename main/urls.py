@@ -9,5 +9,6 @@ urlpatterns = [
     path('register/', RegisterUser.as_view(), name='Register'),
     path('logout/', logout_account, name='Logout'),
     path('account/', account, name='Account'),
+    path('htmltags/', HTMLTagsPage.as_view(), name='HTMLTags'),
     path('htmltags/<tag_id>/', showHtmlTag, name='HTMLTag'),
 ]
