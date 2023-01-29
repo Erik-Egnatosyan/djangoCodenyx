@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.template.defaultfilters import truncatechars
+from django.contrib.admin import AdminSite
 
 from .models import *
 
@@ -16,7 +16,12 @@ class CSStags(admin.ModelAdmin):
     fieldsets = [('Tag', {'fields': ['tagname']}), ('Description',{'fields': ['descriptionArm', 'descriptionRus']}), ('Example', {'fields': ['example']}), ('Type', {'fields': ['typeArm', 'typeRus']})]
     inlines = [CSStagsAttrs]
 
+
 admin.site.register(Lessons)
 admin.site.register(HTMLTags, HTMLtags)
 admin.site.register(CSSTags, CSStags)
 admin.site.register(CSSTagsAttrs)
+admin.site.register(Badge)
+admin.site.register(NYXCoins)
+admin.site.register(Account)
+admin.site.register(UserBadge)
