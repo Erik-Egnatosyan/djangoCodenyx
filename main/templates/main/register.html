@@ -1,19 +1,152 @@
 {% extends 'main/base.html' %}
 
 {% block content %}
-<div class="register-div">
-    <div class="wrapper">
-        <form method="post">
-            {% csrf_token %}
-            <div class="form-errors">{{ form.non_field_errors }}</div>
+<section class="u-clearfix u-lightbox u-white u-section-1 u-image-registration" id="sec-d6bf">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="flex-form">
+            <form method="post" class="main-form">
+                {% csrf_token %}
+                <div class="form-errors">{{ form.non_field_errors }}</div>
+                <div class="main_block_reg">
+                    <h1 id="h1-form">Register</h1>
+                    {% for f in form %}
+                    <p class="username-input">
+                      <div class="inputGroup">
+                        {{f}}
+                        <label for="{{f.id_for_label}}">{{f.label}}</label>
+                      </div>
+                    </p>
+                    {% endfor %}
+                    <p>Already registered? <a href="{% url 'main:Login' %}">Login</a></p>
 
-            {% for f in form %}
-            <p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
-            <div class="form-input">{{f.errors}}</div>
-            {% endfor %}
-            <p>Already registered? <a href="{% url 'main:Login' %}">Login</a></p>
-            <button type="submit">Register</button>
-        </form>
+                    <button class="login-btn" type="submit">Register</button>
+
+                    <div class="form-input">{{f.errors}}</div>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+</section>
+  <style>
+    .main-form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      background-color: #6998d1;
+      padding: 54px 144px;
+      border-radius: 50px;
+      background: linear-gradient(145deg, #c3f7ff, #899fff);
+      box-shadow: 20px 20px 60px #c3f7ff,
+        -20px -20px 60px #899fff;
+    }
+
+    input {
+      outline: none;
+      background-color: transparent;
+      border-radius: 10px;
+      border: 0px solid transparent;
+      text-decoration: underline;
+    }
+
+    .username-input i,
+    .password-input i {
+      padding-right: 10px;
+    }
+
+    .flex-form {
+      display: flex;
+      justify-content: center;
+      height: 900px;
+      align-items: center;
+    }
+
+    #h1-form {
+      text-align: center;
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .flex-form-p {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .u-image-registration {
+      background-image: url(/images/star-image.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #reg-text {
+      font-size: 50px;
+    }
+
+    #main_block_reg {
+      display: flex;
+      flex-direction: column;
+    }
+    #sign-up-style
+    {
+      color: #0c00ff;
+    }
+    .login-btn {
+        background-color: #9600ff;
+        border: 2px solid #c4c4c4;
+        border-radius: 15px;
+        padding: 10px;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .inputGroup {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 1em 0 1em 0;
+      max-width: 190px;
+      position: relative;
+    }
+
+    .inputGroup input {
+      font-size: 100%;
+      padding: 0.8em;
+      outline: none;
+      border: 2px solid rgb(165 91 200);
+      background-color: transparent;
+      border-radius: 20px;
+      width: 100%;
+
+    }
+
+    .inputGroup label {
+      font-size: 100%;
+      position: absolute;
+      left: 0;
+      padding: 0.8em;
+      margin-left: 0.5em;
+      pointer-events: none;
+      transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      color: rgb(100, 100, 100);
+      border-radius: 50px;
+    }
+
+    .inputGroup :is(input:focus, input:valid)~label {
+      transform: translateY(-50%) scale(.9);
+      margin: 0em;
+      margin-left: 1.3em;
+      padding: 0.4em;
+      background-color: #92a5f9;
+      color: black;
+    }
+    .alternative-signup
+    {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .inputGroup :is(input:focus, input:valid) {
+      border-color: rgb(150 166 243);
+    }
+  </style>
+{% endblock %}
+
+{% block import %}
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 {% endblock %}

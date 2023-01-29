@@ -72,7 +72,7 @@ class LoginUser(LoginView):
         context['title'] = "Login"
         return context
 
-@login_required(redirect_field_name='main:Login')
+@login_required()
 def account(request):
     return render(request, 'main/account.html')
 

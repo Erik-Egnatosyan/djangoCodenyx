@@ -45,9 +45,12 @@ class CSSTags(models.Model):
     def __str__(self):
         return self.tagname
 
+
 class CSSTagsAttrs(models.Model):
     attrname = models.CharField(max_length=50, default='', blank=False)
     CSSTag = models.ForeignKey(CSSTags, on_delete=models.CASCADE)
     descriptionArm = models.TextField(blank=True)
     descriptionRus = models.TextField(blank=True)
     descriptionEng = models.TextField(blank=True)
+
+
