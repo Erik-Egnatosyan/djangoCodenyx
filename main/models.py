@@ -54,11 +54,13 @@ class CSSTagsAttrs(models.Model):
     descriptionRus = models.TextField(blank=True)
     descriptionEng = models.TextField(blank=True)
 
+
 class Account(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     picture = models.ImageField(upload_to='UserAccountPics', blank=True)
     def __str__(self):
-        return self.user
+        return self.user.username
+
 
 class Badge(models.Model):
     name = models.CharField(max_length=100)
@@ -85,5 +87,3 @@ class NYXCoins(models.Model):
 
     def __str__(self):
         return f'{self.value} coins'
-
-

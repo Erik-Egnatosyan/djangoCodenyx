@@ -30,7 +30,7 @@ class Practice(ListView):
 
 class HTMLTagsPage(ListView):
     model = HTMLTags
-    template_name = 'main/Html-Category.html'
+    template_name = 'main/htmltag.html'
     context_object_name = 'tags'
 
     def get_context_data(self, *, object_list=None, **kwargs):
@@ -42,7 +42,7 @@ class HTMLTagsPage(ListView):
 
 def showHtmlTag(request, tag_id):
     tag = HTMLTags.objects.get(pk=tag_id)
-    return render(request, 'main/HTMLTags.html', {'tag': tag})
+    return render(request, 'main/showtag.html', {'tag': tag})
 
 
 # ALL RELATED TO LOGIN AND REGISTER

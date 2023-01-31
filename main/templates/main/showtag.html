@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<div class="showtag">
+    <div class="wrapper">
+        <button class="tag-button">{{tag}}</button>
+        <div class="text">
+            {{tag.descriptionRus | safe}}
+        </div>
+        <hr>
+        <h3>Синтаксис</h3>
+        <div class="tag-syntax">
+            <script type="text/plain" class="language-html line-numbers">{{tag.syntax | safe}}</script>
+        </div>
+    </div>
+</div>
+{% endblock %}

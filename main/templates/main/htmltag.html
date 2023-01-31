@@ -1,0 +1,101 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="html-main">
+    <div class="wrapper">
+        <div class="model"></div>
+        <div class="tags">
+            <div class="tags1 tag-type">
+                <h1>Базовые теги HTML</h1>
+                <div class="tag-grid">
+                    {% for i in tags %}
+                        {% if i.typeRus == 'Базовые теги HTML' %}
+                            <a href="#">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tags2 tag-type">
+                <h1>Форматирование</h1>
+                <div class="tag-grid">
+                    {% for i in tags %}
+                        {% if i.typeRus == 'Форматирование' %}
+                            <a href="#">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tags3 tag-type">
+                <h1>Аудио, видео и изображения</h1>
+                <div class="tag-grid">
+                    {% for i in tags %}
+                        {% if i.typeRus == 'Аудио, видео и изображения' %}
+                            <a href="#">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tags4 tag-type">
+                <h1>Ссылки</h1>
+                <div class="tag-grid">
+                    {% for i in tags %}
+                        {% if i.typeRus == 'Ссылки' %}
+                            <a href="{% url 'main:HTMLTag' i.pk %}">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tags5 tag-type">
+                <h1>Формы, фреймы и ввод</h1>
+                <div class="tag-grid">
+                    {% for i in tags %}
+                        {% if i.typeRus == 'Формы, фреймы и ввод' %}
+                            <a href="#">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tags6 tag-type">
+                <h1>Таблицы и списки</h1>
+                <div class="tag-grid">
+                    {% for i in tags %}
+                        {% if i.typeRus == 'Таблицы и списки' %}
+                            <a href="#">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tags7 tag-type">
+                <h1>Стили и семантика</h1>
+                <div class="tag-grid">
+                    {% for i in tags %}
+                        {% if i.typeRus == 'Стили и семантика' %}
+                            <a href="#">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tags8 tag-type">
+                <h1>Мета теги</h1>
+                <div class="tag-grid">
+                    {% for i in tags %}
+                        {% if i.typeRus == 'Мета теги' %}
+                            <a href="#">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tags8 tag-type last">
+                <h1>Программирование</h1>
+                <div class="tag-grid">
+                    {% for i in tags %}
+                        {% if i.typeRus == 'Программирование' %}
+                            <a href="#">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

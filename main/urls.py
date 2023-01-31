@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.urls import path
 from .views import *
 
@@ -11,4 +13,4 @@ urlpatterns = [
     path('account/', account, name='Account'),
     path('htmltags/', HTMLTagsPage.as_view(), name='HTMLTags'),
     path('htmltags/<tag_id>/', showHtmlTag, name='HTMLTag'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
