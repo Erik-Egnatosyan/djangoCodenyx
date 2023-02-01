@@ -11,6 +11,10 @@
 }
 
 /* ====== HTML TAGS PAGE (GRID) ======= */
+/* MAIN DIV */
+.main {
+    width: 100%;
+}
 
 .html-main {
     width: 100%;
@@ -114,4 +118,168 @@
     border-right: 0;
 }
 
-/* ======== MEDIA (SCREEN SIZES) for HTML GRID ========= */
+/* ======== ACCOUNT.html ======= */
+.account-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*  will be deleted */
+    width: 100%;
+}
+
+.account-main .account-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.account-main .account-wrapper .section {
+    min-height: 300px;
+}
+
+.account-main .account-wrapper .section-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: 'picture-div info-div info-div info-div'
+}
+
+.account-main .account-wrapper .section-1 .picture-div {
+    grid-area: picture-div;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-main .account-wrapper .section-1 .picture-div button {
+    border-radius: 10px;
+    background: #1778f2;
+    border:0;
+    width: 200px;
+    font-size: 16px;
+    padding: 10px 60px;
+    color: white;
+    cursor: pointer;
+}
+
+.account-main .account-wrapper .section-1 .picture-div .img-div {
+    min-width: 150px;
+    max-width: 150px;
+    background: gray;
+    aspect-ratio: 1/1 !important;
+    border-radius: 50%;
+}
+
+.account-main .account-wrapper .section-1 .picture-div .img-div img {
+    max-width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.account-main .account-wrapper .section-1 .info-div {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    grid-area: info-div;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.account-main .account-wrapper .section-1 .info-div hr {
+    border: 1px solid lightgray;
+}
+
+.account-main .account-wrapper .section-1 .rotate {
+    border: 1px solid black;
+}
+
+.account-main .account-wrapper .section-1 .info-div .infos {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.account-main .account-wrapper .section-1 .info-div .infos .info {
+    text-align: left;
+    min-width: 200px;
+}
+
+.account-main .account-wrapper .section-1 .info-div .infos .tag span {
+    color: black;
+    font-weight: 700;
+}
+
+.account-main .account-wrapper .section-1 .info-div .infos .info span {
+    color: gray;
+}
+
+.account-main .account-wrapper .section-2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'badges-div progress-div progress-div'
+}
+
+.account-main .account-wrapper .section-2 .badges-div {
+    display: flex;
+    padding: 20px;
+    grid-area: badges-div;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+/* !!!!!!!!! BORDER RADIUS FOR GRID ITEMS !!!!!!!  */
+.account-main .account-wrapper .section-2 .badges-div, .account-main .account-wrapper .section-2 .progress-div, .account-main .account-wrapper .section-1 .picture-div, .account-main .account-wrapper .section-1 .info-div {
+    border-radius: 20px;
+}
+
+.account-main .account-wrapper .section-2 .badges-div .header {
+    width: 100%;
+    text-align: center;
+}
+
+.account-main .account-wrapper .section-2 .badges-div .grid {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(5rem, 1fr));
+    width: 240px;
+    aspect-ratio: 1/1;
+}
+
+.account-main .account-wrapper .section-2 .badges-div .grid img {
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.account-main .account-wrapper .section-2 .progress-div {
+    grid-area: progress-div;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    overflow: scroll;
+}
+
+.account-main .account-wrapper .section-2 .progress-div h3 {
+    font-weight: 300;
+}
+
+.account-main .account-wrapper .section-2 .progress-div progress {
+    height: 30px;
+    width: 500px
+}

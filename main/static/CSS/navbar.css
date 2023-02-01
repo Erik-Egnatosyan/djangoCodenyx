@@ -1,4 +1,78 @@
-{% load static %}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-{% block content %}
-{% endblock %}
+.navbar .wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    max-height: 80px;
+    padding: 20px 0px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar ul .logo {
+    height: 35px;
+}
+
+.navbar ul .input {
+    display: flex;
+}
+
+.navbar ul .input input {
+    height: 50px;
+    width: 250px;
+    border: 1px solid gray;
+    border-right: 0;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 30px 0px 0px 30px;;
+    outline: none;
+}
+
+.navbar ul .input .search-button {
+    background: lightgray;
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 0 30px 30px 0;
+    border: 1px solid gray;
+    border-left: 0;
+}
+
+.navbar ul .input .search-button i {
+    font-size: 25px;
+}
+
+.navbar ul i {
+    font-size: 36px;
+    color: black;
+}
+
+.navbar ul button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.navbar .user-ul {
+    margin-left: auto;
+}
+
+.navbar .user-ul .login-image {
+    width: 80px;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.navbar .ul img {
+    width: 100%;
+    object-fit: fit;
+}

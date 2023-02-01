@@ -58,6 +58,8 @@ class RegisterUser(CreateView):
 
     def form_valid(self, form):
         user = form.save()
+        Account.objects.create(user=user)
+        NYXCoins.objects.create(user=User)
         login(self.request, user)
         return redirect('main:Home')
 

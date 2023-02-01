@@ -58,6 +58,10 @@ class CSSTagsAttrs(models.Model):
 class Account(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     picture = models.ImageField(upload_to='UserAccountPics', blank=True)
+    @property
+    def coins_count(self):
+        return self.user.nyxcoins.value
+
     def __str__(self):
         return self.user.username
 
@@ -72,7 +76,7 @@ class Badge(models.Model):
 
 
 class UserBadge(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     badge = models.ForeignKey(Badge, on_delete=models.CASCADE)
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
     earned_date = models.DateTimeField(auto_now_add=True)
@@ -82,8 +86,8 @@ class UserBadge(models.Model):
 
 
 class NYXCoins(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     value = models.PositiveIntegerField(default=0)
 
     def __str__(self):
-        return f'{self.value} coins'
+        return self.user.username

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.account-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /*  will be deleted */
+  width: 100%;
+}
+
+.account-main .account-wrapper {
+  width: 100%;
+  max-width: 1140px;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.account-main .account-wrapper .section {
+  min-height: 300px;
+}
+
+.account-main .account-wrapper .section-1 {
+  display: flex;
+}
+
+.account-main .account-wrapper .section-1 .picture-div {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.account-main .account-wrapper .section-1 .picture-div button {
+  border-radius: 20px;
+  border: 1px solid black;
+  background: transparent;
+  width: 200px;
+  font-size: 16px;
+  padding: 10px 60px;
+}
+
+.account-main .account-wrapper .section-1 .picture-div .img-div {
+  width: 100%;
+  max-width: 300px;
+  background: gray;
+  aspect-ratio: 1/1 !important;
+  border-radius: 50%;
+}
+
+.account-main .account-wrapper .section-1 .picture-div .img-div img {
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.account-main .account-wrapper .section-1 .info-div {
+  width: 100%;
+}

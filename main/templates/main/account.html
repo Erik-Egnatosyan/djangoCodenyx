@@ -1,0 +1,69 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="account-main">
+      <div class="account-wrapper">
+        <div class="section-1 section">
+          <div class="picture-div">
+            <div class="img-div">
+              <img src="{{ user.account.picture.url }}" />
+            </div>
+            <button>Edit</button>
+          </div>
+          <div class="info-div">
+            <div class="username-div infos">
+              <div class="tag"><span>Username</span></div>
+              <div class="info"><span>{{user.username}}</span></div>
+            </div>
+            <hr>
+            <div class="email-div infos">
+              <div class="tag"><span>E-Mail</span></div>
+              <div class="info"><span>{{user.email}}</span></div>
+            </div>
+            <hr>
+            <div class="coins-div infos">
+              <div class="tag"><span>NYX Coins</span></div>
+              <div class="info"><span>{{user.account.coins_count}}</span></div>
+            </div>
+            <hr>
+            <div class="phone-number infos">
+              <div class="tag"><span>Phone</span></div>
+              <div class="info"><span>+374 93302357</span></div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <div class="section-2 section">
+          <div class="badges-div">
+            <div class="header"><h1>Badges</h1></div>
+            <div class="grid">
+              <img src="{% static 'IMAGES/badge.png' %}">
+              <img src="{% static 'IMAGES/badge.png' %}">
+              <img src="{% static 'IMAGES/badge.png' %}">
+              <img src="{% static 'IMAGES/badge.png' %}">
+              <img src="{% static 'IMAGES/badge.png' %}">
+              <img src="{% static 'IMAGES/badge.png' %}">
+              <img src="{% static 'IMAGES/badge.png' %}">
+              <img src="{% static 'IMAGES/badge.png' %}">
+              <img src="{% static 'IMAGES/badge.png' %}">
+             </div>
+          </div>
+          <div class="progress-div">
+            <h1>Progress</h1>
+            <div class="html">
+              <h3>HTML</h3>
+              <progress value="56" max="100"></progress>
+            </div>
+            <div class="css">
+              <h3>CSS</h3>
+              <progress value="78" max="100"></progress>
+            </div>
+            <div class="js">
+              <h3>JS</h3>
+              <progress value="13" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

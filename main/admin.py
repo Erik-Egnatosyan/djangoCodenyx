@@ -16,12 +16,18 @@ class CSStags(admin.ModelAdmin):
     fieldsets = [('Tag', {'fields': ['tagname']}), ('Description',{'fields': ['descriptionArm', 'descriptionRus']}), ('Example', {'fields': ['example']}), ('Type', {'fields': ['typeArm', 'typeRus']})]
     inlines = [CSStagsAttrs]
 
+class NYXcoins(admin.ModelAdmin):
+    list_display = ('user', 'value')
+
+class Accounts(admin.ModelAdmin):
+    list_display = ('user', 'picture', 'coins_count')
+    fieldsets = [('user', {'fields': ['user']}), ('picture', {'fields': ['picture']})]
 
 admin.site.register(Lessons)
 admin.site.register(HTMLTags, HTMLtags)
 admin.site.register(CSSTags, CSStags)
 admin.site.register(CSSTagsAttrs)
 admin.site.register(Badge)
-admin.site.register(NYXCoins)
-admin.site.register(Account)
+admin.site.register(NYXCoins, NYXcoins)
+admin.site.register(Account, Accounts)
 admin.site.register(UserBadge)
