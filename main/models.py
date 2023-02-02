@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User
 from django.db import models
 
+import re
+
 
 class Lessons(models.Model):
     titleArm = models.CharField(max_length=255, unique=True, default='', blank=True)
@@ -32,6 +34,9 @@ class HTMLTags(models.Model):
 class HTMLTagsAttrs(models.Model):
     attrname = models.CharField(max_length=50, default='', blank=False)
 
+    def __str__(self):
+        return self.tagname
+
 
 class CSSTags(models.Model):
     tagname = models.CharField(max_length=50, default='', blank=False)
@@ -40,20 +45,31 @@ class CSSTags(models.Model):
     descriptionEng = models.TextField(blank=True)
     syntax = models.TextField(default='', blank=True)
     example = models.TextField(default='', blank=True)
-    typeArm = models.CharField(max_length=70, blank=True, default='')
-    typeRus = models.CharField(max_length=70, blank=False, default='')
+    letter = models.CharField(max_length=1, default='', blank=True)
 
+    def save(self, *args, **kwargs):
+        if not '!' in self.tagname:
+            for i in self.tagname:
+                if i.isalpha():
+                    self.letter = i
+                    break
+        else:
+            self.letter = '!'
+        super().save(*args, *kwargs)
     def __str__(self):
         return self.tagname
 
 
+
 class CSSTagsAttrs(models.Model):
+    tag = models.ForeignKey(CSSTags, on_delete=models.CASCADE, default='')
     attrname = models.CharField(max_length=50, default='', blank=False)
-    CSSTag = models.ForeignKey(CSSTags, on_delete=models.CASCADE)
     descriptionArm = models.TextField(blank=True)
     descriptionRus = models.TextField(blank=True)
     descriptionEng = models.TextField(blank=True)
 
+    def __str__(self):
+        return self.attrname
 
 class Account(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)

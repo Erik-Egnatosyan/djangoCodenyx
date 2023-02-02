@@ -1,20 +1,23 @@
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import LoginView
+from django.core import serializers
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import ListView, CreateView
+import json
+
 
 from .forms import LoginUserForm, RegisterUserForm
 from .models import *
 
 
 def home(request):
-    a = Lessons.objects.get(pk=1)
     return render(request, 'main/index.html')
 
-
+# PAGES =========================================================================
 class Practice(ListView):
     model = Lessons
     template_name = 'main/practice.html'
@@ -40,12 +43,24 @@ class HTMLTagsPage(ListView):
         return HTMLTags.objects.all()
 
 
+# class CSSTagsPage(ListView):
+#     model = CSSTags
+#     template_name = 'main/csstag.html'
+#     context_object_name = 'tags'
+#
+#     def get_context_data(self, *, object_list=None, **kwargs):
+#         context = super().get_context_data(**kwargs)
+#         return context
+#     def get_queryset(self):
+#         return CSSTags.objects.all()
+#
+
 def showHtmlTag(request, tag_id):
     tag = HTMLTags.objects.get(pk=tag_id)
     return render(request, 'main/showtag.html', {'tag': tag})
 
 
-# ALL RELATED TO LOGIN AND REGISTER
+# ALL RELATED TO LOGIN AND REGISTER ==========================================================
 class RegisterUser(CreateView):
     form_class = RegisterUserForm
     template_name = 'main/register.html'
@@ -81,3 +96,12 @@ def account(request):
 def logout_account(request):
     logout(request)
     return redirect('main:Home')
+
+# AJAX =========================================================================
+def search(request):
+    if request.method == 'POST':
+        tags = HTMLTags.objects.filter(tagname__icontains=request.POST['input']).values('tagname')
+        tags = [i['tagname'] for i in tags]
+        print(tags)
+        return HttpResponse(json.dumps(tags))
+

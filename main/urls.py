@@ -13,4 +13,7 @@ urlpatterns = [
     path('account/', account, name='Account'),
     path('htmltags/', HTMLTagsPage.as_view(), name='HTMLTags'),
     path('htmltags/<tag_id>/', showHtmlTag, name='HTMLTag'),
+    # path('csstags/', CSSTagsPage.as_view(), name='CSSTags'),
+    # search AJAX
+    path('search/', search, name='Search'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

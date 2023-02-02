@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
 .navbar .wrapper {
     width: 100%;
     max-width: 1140px;
@@ -66,10 +71,28 @@
     margin-left: auto;
 }
 
-.navbar .user-ul .login-image {
-    width: 80px;
-    height: 100%;
+.navbar .user-ul .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .user-ul .user .picture {
+    width: 55px;
     aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    transition: .15s;
+}
+
+.navbar .user-ul .user .picture:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .user-ul .user .picture img {
+    width: 100%;
+    object-fit: center;
+    border-radius: 50%;
 }
 
 .navbar .ul img {

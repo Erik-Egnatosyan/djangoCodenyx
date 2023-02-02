@@ -105,6 +105,14 @@
     height: 55px;
 }
 
+.showtag .wrapper .text {
+    font-size: 1.25rem;
+}
+
+.showtag .wrapper .text .highlight {
+    color: #00f;
+}
+
 .showtag .wrapper h3 {
     font-size: 1.875rem;
     font-weight: 400;
@@ -123,7 +131,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /*  will be deleted */
+    height: 90vh; /*  will be deleted */
     width: 100%;
 }
 
@@ -158,7 +166,7 @@
     align-items: center;
     justify-content: center;
 }
-
+/* EDIT BUTTON */
 .account-main .account-wrapper .section-1 .picture-div button {
     border-radius: 10px;
     background: #1778f2;
@@ -168,14 +176,19 @@
     padding: 10px 60px;
     color: white;
     cursor: pointer;
+    transition: .1s;
+}
+
+.account-main .account-wrapper .section-1 .picture-div button:hover {
+    background: #105ab5;
 }
 
 .account-main .account-wrapper .section-1 .picture-div .img-div {
     min-width: 150px;
     max-width: 150px;
-    background: gray;
     aspect-ratio: 1/1 !important;
     border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
 }
 
 .account-main .account-wrapper .section-1 .picture-div .img-div img {
@@ -281,5 +294,6 @@
 
 .account-main .account-wrapper .section-2 .progress-div progress {
     height: 30px;
-    width: 500px
+    width: 500px;
 }
+

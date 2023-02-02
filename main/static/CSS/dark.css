@@ -1,0 +1,74 @@
+.video-block-cat,body{
+    background-color:#040021!important
+}
+.main-block{
+    background-color:#040021;
+    color:azure
+}
+.form-size{
+    border-color:#9afdfc;
+    box-shadow:0 0 15px .5px #0ff
+}
+:not(.u-effect-fade)>.u-opacity-30{
+    opacity:1
+}
+code{
+    background-color:#00869b
+}
+.button-language{
+    background:linear-gradient(to right,#91eae4,#86a8e7,#7f7fd5);
+    border:2px solid #328ccd
+}
+#laptop__terminal,.laptop-base,.laptop-keyboard,.speaker,.table{
+    fill:#040021!important
+}
+.h1-color-main{
+    color:#fff!important
+}
+.company-img{
+    filter:invert(1)
+}
+.button-animation{
+    color:#fff!important;
+    background-color:#00095e!important
+}
+.main-block{
+    box-shadow:inset -2px -2px 20px 0 #01fff9,-2px -2px 20px 0 #0ff
+}
+.model-block{
+    background-color:#040021
+}
+.model-block-color3{
+    box-shadow:rgb(46 190 207 / 40%) 5px 5px,rgb(46 190 207 / 30%) 10px 10px,rgb(46 190 207 / 20%) 15px 15px,rgb(46 190 207 / 10%) 20px 20px,rgb(46 190 207 / 5%) 25px 25px,-3px -3px 20px 0 #00fffc45
+}
+.model-block-color1{
+    box-shadow:rgb(46 190 207 / 40%) -5px 5px,rgb(46 190 207 / 30%) -10px 10px,rgb(46 190 207 / 20%) -15px 15px,rgb(46 190 207 / 10%) -20px 20px,rgb(46 190 207 / 5%) -25px 25px,3px 3px 20px 0 #00fffc45
+}
+@media (max-width:991px){
+    .model-block-color1{
+        box-shadow:rgb(46 190 207 / 40%) 0 5px,rgb(46 190 207 / 30%) 0 10px,rgb(46 190 207 / 20%) 0 15px,rgb(46 190 207 / 10%) 0 20px,rgb(46 190 207 / 5%) 0 25px,-3px -3px 20px 0 #00fffc45
+    }
+    .model-block-color2{
+        box-shadow:rgb(46 190 207 / 40%) 0 5px,rgb(46 190 207 / 30%) 0 10px,rgb(46 190 207 / 20%) 0 15px,rgb(46 190 207 / 10%) 0 20px,rgb(46 190 207 / 5%) 0 25px,-3px -3px 20px 0 #00fffc45
+    }
+}
+.model-btn:active{
+    background-color:hsl(183deg 100% 50%);
+    color:hsl(0deg 0% 0%);
+    box-shadow:rgb(0 255 255) 0 0 0 0;
+    transform:translateY(10px);
+    transition:.1s
+}
+.model-btn:hover{
+    background-color:hsl(183deg 100% 50%);
+    color:hsl(0deg 0% 0%);
+    box-shadow:rgb(0 255 255) 0 0 0 0;
+    transform:translateY(10px);
+    transition:1s
+}
+.h2-main-text,.h2-text-center,.text-block{
+    color:#fff
+}
+.shape-left-top,.shape-right-bottom{
+    border-color:#fff
+}

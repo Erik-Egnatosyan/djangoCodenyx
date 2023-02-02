@@ -13,7 +13,7 @@ class HTMLtags(admin.ModelAdmin):
 
 class CSStags(admin.ModelAdmin):
     list_display = ('tagname', 'descriptionArm', 'descriptionRus', 'syntax', 'example')
-    fieldsets = [('Tag', {'fields': ['tagname']}), ('Description',{'fields': ['descriptionArm', 'descriptionRus']}), ('Example', {'fields': ['example']}), ('Type', {'fields': ['typeArm', 'typeRus']})]
+    fieldsets = [('Tag', {'fields': ['tagname']}), ('Description',{'fields': ['descriptionArm', 'descriptionRus']}), ('Example', {'fields': ['example']}), ('Letter', {'fields': ['letter']})]
     inlines = [CSStagsAttrs]
 
 class NYXcoins(admin.ModelAdmin):
