@@ -1,6 +1,9 @@
 {% extends 'main/base.html' %}
 
 {% load static %}
+{% block import %}
+<link rel="stylesheet" href="{% static 'CSS/index.css' %}">
+{% endblock %}
 
 {% block content %}
     <section class="video-block-cat size-block-video">  
@@ -162,22 +165,22 @@
       <div class="position-center-block block-to-center">
         <span class="Russian">
           <div class="main-3-blocks">
-            <div class="main-block"><img class="main-img" src="/images/maze-easy.png" alt=""><h2 class="rus-shrift">Простота</h2><p>Никакой лишний информации. У нас написано всё кратко и понятно. Мы ценим ваше время</p></div>
-            <div class="main-block"><img class="main-img" src="/images/speed-icon.png" alt=""><h2 class="rus-shrift">Удобный поисковик</h2><p>Удобный поисковик Находите все нужные теги или свойства, быстро и просто через поисковик</p></div>
-            <div class="main-block"><img class="main-img" src="/images/language-icon.png" alt=""><h2 class="rus-shrift">Многоязычность</h2><p>Можно посмотреть информацию на Русском языке или же в Армянской версии, с ручным переводом.</p></div>
+            <div class="main-block"><img class="main-img" src="{% static 'IMAGES/maze-easy.png' %}" alt=""><h2 class="rus-shrift">Простота</h2><p>Никакой лишний информации. У нас написано всё кратко и понятно. Мы ценим ваше время</p></div>
+            <div class="main-block"><img class="main-img" src="{% static 'IMAGES/speed-icon.png' %}" alt=""><h2 class="rus-shrift">Удобный поисковик</h2><p>Удобный поисковик Находите все нужные теги или свойства, быстро и просто через поисковик</p></div>
+            <div class="main-block"><img class="main-img" src="{% static 'IMAGES/language-icon.png' %}" alt=""><h2 class="rus-shrift">Многоязычность</h2><p>Можно посмотреть информацию на Русском языке или же в Армянской версии, с ручным переводом.</p></div>
           </div>
         </span>
         <span class="Armenian">
           <div class="main-3-blocks">
-            <div class="main-block"><img class="main-img" src="/images/maze-easy.png" alt=""><h2 class="arm-shrift">Պարզություն</h2><p class="arm-min-shrift">Ավելնորդ տեղեկություններ չկան: Ամեն ինչ գրված է հակիրճ ու հասկանալի։ Մենք գնահատում ենք ձեր ժամանակը</p></div>
-            <div class="main-block"><img class="main-img" src="/images/speed-icon.png" alt=""><h2 class="arm-shrift">Հարմարավետ որոնում</h2><p class="arm-min-shrift">Գտեք ձեզ անհրաժեշտ բոլոր թեգերը կամ հատկությունները որոնման համակարգի միջոցով` հեշտ և արագ</p></div>
-            <div class="main-block"><img class="main-img" src="/images/language-icon.png" alt=""><h2 class="arm-shrift">Բազմալեզու</h2><p class="arm-min-shrift">Դուք կարող եք դիտել տեղեկատվությունը ռուսերեն և հայերեն, լեզվով հասկանալի թարգմանությամբ</p></div>
+            <div class="main-block"><img class="main-img" src="{% static 'IMAGES/maze-easy.png' %}" alt=""><h2 class="arm-shrift">Պարզություն</h2><p class="arm-min-shrift">Ավելնորդ տեղեկություններ չկան: Ամեն ինչ գրված է հակիրճ ու հասկանալի։ Մենք գնահատում ենք ձեր ժամանակը</p></div>
+            <div class="main-block"><img class="main-img" src="{% static 'IMAGES/speed-icon.png' %}" alt=""><h2 class="arm-shrift">Հարմարավետ որոնում</h2><p class="arm-min-shrift">Գտեք ձեզ անհրաժեշտ բոլոր թեգերը կամ հատկությունները որոնման համակարգի միջոցով` հեշտ և արագ</p></div>
+            <div class="main-block"><img class="main-img" src="{% static 'IMAGES/language-icon.png' %}" alt=""><h2 class="arm-shrift">Բազմալեզու</h2><p class="arm-min-shrift">Դուք կարող եք դիտել տեղեկատվությունը ռուսերեն և հայերեն, լեզվով հասկանալի թարգմանությամբ</p></div>
           </div>
         </span>
         <div class="main-2-model-block">
-          <div class="model-block model-block-color1"><model-viewer loading="lazy" disable-tap disable-pan camera-orbit="90deg 90deg" poster="/images/html-logo.webp" src="/source/html-3d.glb" camera-controls auto-rotate disable-zoom environment-image="/source/hdr4k60fps.hdr" shadow-intensity="1" alt="An invalid model" class="modell-viewer"></model-viewer><a href="Html-Category.html"><div class="model-btn button-size-model"><span>Перейти</span></div></a></div>
-          <div class="model-block model-block-color2"><model-viewer loading="lazy" disable-tap disable-pan camera-orbit="90deg 90deg" poster="/images/css-logo.webp" src="/source/css-3d.glb" camera-controls auto-rotate disable-zoom environment-image="/source/hdr4k60fps.hdr" shadow-intensity="1" alt="An invalid model" class="modell-viewer"></model-viewer><a href="Css.html"><div class="model-btn button-size-model"><span>Перейти</span></div></a></div>
-          <div class="model-block model-block-color3"><model-viewer loading="lazy" disable-tap disable-pan camera-orbit="90deg 90deg" poster="/images/css-logo.webp" src="/source/js2.glb" camera-controls auto-rotate disable-zoom environment-image="/source/hdr4k60fps.hdr" shadow-intensity="1" alt="An invalid model" class="modell-viewer"></model-viewer><a href="404.html"><div class="model-btn button-size-model"><span>Перейти</span></div></a></div>
+          <div class="model-block model-block-color1"><model-viewer loading="lazy" disable-tap disable-pan camera-orbit="90deg 90deg" poster="{% static 'IMAGES/html-logo.webp' %}" src="{% static 'MODELS/html-3d.glb' %}" camera-controls auto-rotate disable-zoom environment-image="{% static 'MODELS/hdr4k60fps.hdr' %}" shadow-intensity="1" alt="An invalid model" class="modell-viewer"></model-viewer><a href="Html-Category.html"><div class="model-btn button-size-model"><span>Перейти</span></div></a></div>
+          <div class="model-block model-block-color2"><model-viewer loading="lazy" disable-tap disable-pan camera-orbit="90deg 90deg" poster="{% static 'IMAGES/css-logo.webp' %}" src="{% static 'MODELS/css-3d.glb' %}" camera-controls auto-rotate disable-zoom environment-image="{% static 'MODELS/hdr4k60fps.hdr' %}" shadow-intensity="1" alt="An invalid model" class="modell-viewer"></model-viewer><a href="Css.html"><div class="model-btn button-size-model"><span>Перейти</span></div></a></div>
+          <div class="model-block model-block-color3"><model-viewer loading="lazy" disable-tap disable-pan camera-orbit="90deg 90deg" poster="{% static 'IMAGES/css-logo.webp' %}" src="{% static 'MODELS/js2.glb' %}" camera-controls auto-rotate disable-zoom environment-image="{% static 'MODELS/hdr4k60fps.hdr' %}" shadow-intensity="1" alt="An invalid model" class="modell-viewer"></model-viewer><a href="404.html"><div class="model-btn button-size-model"><span>Перейти</span></div></a></div>
         </div>
         <div class="our-team-block">
           <div class="text-block"><div class="text-align-team">
@@ -205,10 +208,10 @@
           <h2 class="arm-shrift h2-text-center"><span class="h2-second-icon"></span>&nbsp;Մեր գործընկերները&nbsp;<span class="h2-second-icon"></span></h2>
         </span>
         <div class="company-images company-img">
-          <div class="img-block"><img src="/images/Company.png" alt="compny-img"></div>
-          <div class="img-block"><img src="/images/Company.png" alt="compny-img"></div>
-          <div class="img-block"><img src="/images/Company.png" alt="compny-img"></div>
-          <div class="img-block"><img src="/images/Company.png" alt="compny-img"></div>
+          <div class="img-block"><img src="{% static 'IMAGES/Company.png' %}" alt="compny-img"></div>
+          <div class="img-block"><img src="{% static 'IMAGES/Company.png' %}" alt="compny-img"></div>
+          <div class="img-block"><img src="{% static 'IMAGES/Company.png' %}" alt="compny-img"></div>
+          <div class="img-block"><img src="{% static 'IMAGES/Company.png' %}" alt="compny-img"></div>
         </div>
         <span class="Russian">
           <h2 class="rus-shrift h2-text-center">Если хотите сотрудничать либо нашли ошибку на сайте. Пишите нам!&nbsp;&nbsp;<span class="icon-h2-contact"></h2>

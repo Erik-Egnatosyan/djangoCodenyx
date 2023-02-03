@@ -1,7 +1,8 @@
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .navbar a {
@@ -17,7 +18,7 @@
     padding: 20px 0px;
 }
 
-.navbar ul {
+.navbar .wrapper ul {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -98,4 +99,39 @@
 .navbar .ul img {
     width: 100%;
     object-fit: fit;
+}
+
+.burger-menu {
+    background: lightgray;
+    width: 100%;
+    height: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.burger-menu.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.burger-menu a {
+    color: black;
+    transition: .2s;
+    line-height: 60px;
+    padding: 0px 20px;
+}
+
+.burger-menu a:hover {
+    background: lightgray;
 }

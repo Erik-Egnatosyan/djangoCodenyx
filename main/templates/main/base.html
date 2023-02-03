@@ -5,6 +5,7 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <meta charset="UTF-8">
+    <link rel="icon" href="{% static 'IMAGES/favicon.ico' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
@@ -28,7 +29,7 @@
         <footer class="footer-all">
           <div class="footer-flex">
             <a href="index.html" class="codenyx-logo-img" data-image-width="309" data-image-height="44" title="Codenyx" alt="Logo">
-              <img loading="lazy" src="images/sevivra.svg" class="codenyx-logo-img-image-1 footer-logo" alt="Logo">
+              <img loading="lazy" src="{% static 'IMAGES/sevivra.svg' %}" class="codenyx-logo-img-image-1 footer-logo" alt="Logo">
             </a>
             <p class="beta-text">Beta test: Version №1</p>
             <div class="icon-footer">
@@ -59,8 +60,8 @@
     });
 </script>
     <dark-mode-toggle appearance="toggle" light="Светлый " dark="Тёмный" remember="Запомнить выбор"></dark-mode-toggle>
-    <script src="styleswitch.js" type="text/javascript"></script>
-    <script type="text/javascript" src="codenyx.js"></script>
+    <script src="{% static 'JS/styleswitch.js' %}" type="text/javascript"></script>
+    <script type="text/javascript" src="{% static 'JS/styleswitch.js' %}"></script>
     <script defer rel="dns-prefetch" type="module" src="https://unpkg.com/@google/model-viewer@2.0.2"></script>
     <script type="module" src="https://unpkg.com/dark-mode-toggle@0.14.2/dist/dark-mode-toggle.min.mjs"></script>
 <!--    <link rel="stylesheet" href="{% static 'CSS/dark.css' %}" media="(prefers-color-scheme: dark)">-->

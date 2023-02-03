@@ -27,6 +27,18 @@ class HTMLTags(models.Model):
     typeArm = models.CharField(max_length=70, blank=True, default='')
     typeRus = models.CharField(max_length=70, blank=False, default='')
 
+    def remove_tags(self):
+        self.descriptionArm = re.sub("<[^<]+?>", "", self.descriptionArm)
+        self.descriptionRus = re.sub("<[^<]+?>", "", self.descriptionRus)
+        self.save()
+
+    def remove_lt(self):
+        self.descriptionArm = self.descriptionArm.replace('&lt;', '<')
+        self.descriptionRus = self.descriptionArm.replace('&lt;', '<')
+        self.descriptionArm = self.descriptionArm.replace('&gt;', '>')
+        self.descriptionRus = self.descriptionArm.replace('&gt;', '>')
+        self.save()
+
     def __str__(self):
         return self.tagname
 

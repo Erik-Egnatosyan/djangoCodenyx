@@ -105,3 +105,14 @@ def search(request):
         print(tags)
         return HttpResponse(json.dumps(tags))
 
+
+def remove():
+    model = HTMLTags.objects.all()
+    for i in model:
+        if i.tagname == '<object>':
+            continue
+        else:
+            print(i)
+            i.remove_lt()
+
+remove()
