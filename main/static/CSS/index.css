@@ -39,6 +39,13 @@
   -webkit-box-shadow:8px 8px 20px #d1d1d1,-8px -8px 20px #fff;
   box-shadow:-20px -20px 20px 5px #d1d1d1,20px 20px 20px 5px #dde3e3
 }
+.modell-viewer {
+    width: 330px;
+    height: 396px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
 .main-block p{
   text-align:center;
   padding:0 20px;
@@ -225,9 +232,7 @@
 .icon-h2-contact{
   width:28px
 }
-.icon-h2-contact::before{
-  content:url(/images/message-01.svg)
-}
+
 .h2-second-icon{
   width:28px
 }
